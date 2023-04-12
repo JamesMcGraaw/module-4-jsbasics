@@ -158,7 +158,6 @@ const people = document.querySelectorAll('p')
 
 people.forEach(function(person) {
     person.addEventListener('click', function(e) {
-        e.stopPropagation()
         console.log(e.currentTarget.dataset.favFood)
     })
 })
